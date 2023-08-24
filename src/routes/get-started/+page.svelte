@@ -2,15 +2,10 @@
     import type { PageData } from './$types';
     
     export let data: PageData;
-
+    console.log(data);
 </script>
 
 
-{#if data.user}
-    <h1>
-        HELLO {data.user.name}
-    </h1>
-{:else}
     <h1>
         Pls login
     </h1>
@@ -23,4 +18,3 @@
         </label>
         <button type="submit" class="button2">Login</button>
     </form>
-{/if}

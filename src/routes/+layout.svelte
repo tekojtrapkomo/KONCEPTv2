@@ -5,6 +5,7 @@
 </script>
 <nav>
     <a href="/">Cats | Home</a>
+    <a href="/explore">Explore</a>
 </nav>
 {#if data.user}
 {  data.user.name }

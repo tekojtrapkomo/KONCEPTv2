@@ -1,5 +1,3 @@
-export const ssr = false;
-
 import type { LayoutServerLoad } from './$types';
 
 export const load = (async ({locals}) => {
