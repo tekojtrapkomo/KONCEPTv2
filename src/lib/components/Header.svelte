@@ -47,6 +47,7 @@
         font-size: 1.2rem;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
+        text-transform: uppercase;
         
     }
 </style>
