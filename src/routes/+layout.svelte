@@ -1,19 +1,10 @@
 <script lang="ts">
     import type { LayoutData } from './$types';
-    
+    import Header from '$lib/components/Header.svelte';
     export let data: LayoutData;
+    import '../app.css'
 </script>
-<nav>
-    <a href="/">Cats | Home</a>
-    <a href="/explore">Explore</a>
-</nav>
-{#if data.user}
-{  data.user.name }
-<form action="/logout" method="POST">
-    <button type="submit" class="logout">Logout</button>
-</form>
-{:else}
-<a href="/get-started">Login</a>
-{/if}
-
+<Header/>
+<style>
+</style>
 <slot/>
