@@ -22,7 +22,7 @@ export const actions: Actions = {
 			}
 		} catch (err) {
 			console.log('Error: ', err);
-			throw error(500, 'Something went wrong logging in');
+			throw error(400, 'Incorrect email or password');
 		}
 		throw redirect(303, '/');
 	}

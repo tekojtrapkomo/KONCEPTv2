@@ -8,6 +8,6 @@ export const load = (async ({locals}) => {
 
     }
     return {
-        user: null
+        user: null,
     };
 }) satisfies LayoutServerLoad;

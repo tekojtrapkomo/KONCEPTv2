@@ -5,6 +5,7 @@ const pb = new PocketBase(import.meta.env.VITE_URI);
 
 
 export const load = (async () => {
+	await new Promise((resolve) => setTimeout(resolve, 5000));
 	const getTopic = async () => {
 		try {
 			const topic = await pb.collection('topic').getFullList(200 /* batch size */, {

@@ -5,7 +5,7 @@
     
     console.log(data)
     export const imgURL = (collectionId:string, id:string, submission:string) => {
-    return `https://hissing-machine.pockethost.io/api/files/${collectionId}/${id}/${submission}`;
+    return `https://api.themonark.systems/api/files/${collectionId}/${id}/${submission}`;
 }
 </script>
 
